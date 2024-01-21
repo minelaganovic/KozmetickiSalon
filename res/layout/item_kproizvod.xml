@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/slika1"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewProduct"
+        android:text="Product ID"/>
+
+    <TextView
+        android:id="@+id/textViewNaziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewId"
+        android:layout_toEndOf="@id/imageViewProduct"
+        android:text="Product Name"/>
+
+    <TextView
+        android:id="@+id/textViewDetalji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNaziv"
+        android:layout_toEndOf="@id/imageViewProduct"
+        android:text="Product Details"/>
+
+    <TextView
+        android:id="@+id/textViewCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDetalji"
+        android:layout_toEndOf="@id/imageViewProduct"
+        android:text="Product Price"/>
+</RelativeLayout>
